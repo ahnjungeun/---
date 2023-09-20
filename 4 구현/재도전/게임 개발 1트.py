@@ -5,6 +5,9 @@ for _ in range(n):
     G.append(list(map(int,input().split())))
 
 M = [[0]*m for _ in range(n)]
+#----
+M[x][y] = 1
+#----
 
 # 북동남서
 dx = [-1,0,1,0]
@@ -48,5 +51,5 @@ while 1:
             break
         turn_count=0
     #----
-    
+
 print(c)
